@@ -1,0 +1,126 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой форум</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f8f8f8;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .forum-section {
+            margin-bottom: 30px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        .forum-section h2 {
+            margin-top: 0;
+            color: #333;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        .thread {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+        }
+        .thread h3 {
+            margin-top: 0;
+            font-size: 1.2em;
+            color: #444;
+        }
+        .thread p {
+            margin-top: 5px;
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        @media (max-width: 600px) {
+            .container {
+                max-width: 95%;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Добро пожаловать на мой форум!</h1>
+
+        <div class="forum-section">
+            <h2>Раздел 1: Общие вопросы</h2>
+            <div class="thread">
+                <h3>Тема 1: Первый вопрос</h3>
+                <p>Первый ответ на первый вопрос.</p>
+            </div>
+            <div class="thread">
+                <h3>Тема 2: Второй вопрос</h3>
+                <p>Первый ответ на второй вопрос.</p>
+            </div>
+        </div>
+
+        <div class="forum-section">
+            <h2>Раздел 2: Технические вопросы</h2>
+            <div class="thread">
+                <h3>Тема 3: Проблема с кодом</h3>
+                <p>Первый ответ на проблему с кодом.</p>
+            </div>
+        </div>
+
+        <div class="forum-section">
+            <h2>Создать новую тему</h2>
+            <form>
+                <label for="topic">Название темы:</label>
+                <input type="text" id="topic" name="topic" required>
+
+                <label for="section">Раздел:</label>
+                <select id="section" name="section">
+                    <option value="Общие вопросы">Общие вопросы</option>
+                    <option value="Технические вопросы">Технические вопросы</option>
+                    <!-- Добавьте другие разделы -->
+                </select>
+
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Создать тему</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+        
